@@ -21,17 +21,46 @@ command depends on your present working directory), then please note that contex
 
 ### Getting Started
 
-1. Use Git to clone the repository for this exercise onto Nike into a subdirectory called `cs1302-ce21`:
+1. Use Git to clone the repository for this exercise onto Nike into a subdirectory called `cs1302-ce23`:
 
    ```
-   $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce21.git
+   $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce23.git
    ```
 
-1. Change into the `cs1302-ce21` directory that was just created and look around. There are couple
+1. Change into the `cs1302-ce23` directory that was just created and look around. There are couple
    files distributed with the exercise, but they are not organized! That's intentional. 
    Continue on to the [Exercise Steps](#exercise-steps) below.
    
 ### Exercise Steps
+
+The starter code isn't organized properly! Instead of manually creating a default package
+for the compiled code, let's 
+[use Maven to create a project directory](https://github.com/cs1302uga/cs1302-tutorials/blob/master/maven.md)
+instead. Here, the term "project" informally refers to a collection of Java files and a POM organized / used 
+by Maven.
+
+1. Using Maven, create a project subdirectory for this exercise called `cs1302-ce23-mvn` with a primary 
+   package called `cs1302.ce23`. In your notes, write down the full command that you used to accomplish 
+   this.
+
+1. Change into the `cs1302-ce23-mvn` directory that you just created using Maven, then update the POM
+   so that the project works with Java 8. After that, use Git to track the `pom.xml`, then commit
+   it to the repository.
+   
+1. Delete the Maven-generated driver (i.e., `src/main/java/cs1302/ce23/App.java`) and the unit test files 
+   (i.e., everything under `src/test/java`), then move the `.java` files provided with the exercise into
+   their proper locations under `src/main/java` according to their package statements. Take special
+   care to use `git mv` instead of just `mv` when moving the files so that Git can still keept track
+   of them! **After doing all of that, use Maven to compile the code.** We hope that you notice that you 
+   did not need to manually compile the files according their dependencies -- Maven did it for you!
+   
+1. Run the `cs1302.ce23.StreamPractice` class. Be sure to specify the class path correctly based on the
+   output provided by Maven during its `compile` phase.
+   
+1. If it worked, then congratulations on creating a Maven project for a set of existing source code
+   files!
+  
+**CHECKPOINT**
 
 An employee’s net income is defined as their gross income     
 minus their deductions. For example, an employee with a       
