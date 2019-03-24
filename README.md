@@ -7,8 +7,8 @@ DESCRIPTION HERE
 
 ## References and Prerequisites
 
-* [CSCI 1302 JavaFX 8 Bookmarks and Notes](http://cobweb.cs.uga.edu/~mec/cs1302/gui/)
-* [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/components/components.md)
+* [Baeldung: Introduction to Java 8 Streams](https://www.baeldung.com/java-8-streams-introduction)
+* [CSCI 1302 Maven Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/maven.md)
 
 ## Questions
 
@@ -27,9 +27,9 @@ command depends on your present working directory), then please note that contex
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce21.git
    ```
 
-1. Change into the `cs1302-ce21` directory that was just created and look around. There is 
-   pretty much nothing there! That's intentional. Continue on to the 
-   [Exercise Steps](#exercise-steps) below.
+1. Change into the `cs1302-ce21` directory that was just created and look around. There are couple
+   files distributed with the exercise, but they are not organized! That's intentional. 
+   Continue on to the [Exercise Steps](#exercise-steps) below.
    
 ### Exercise Steps
 
