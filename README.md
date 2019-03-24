@@ -50,15 +50,15 @@ by Maven.
 1. Delete the Maven-generated driver (i.e., `src/main/java/cs1302/ce23/App.java`) and the unit test files 
    (i.e., everything under `src/test/java`), then move the `.java` files provided with the exercise into
    their proper locations under `src/main/java` according to their package statements. Take special
-   care to use `git mv` instead of just `mv` when moving the files so that Git can still keept track
-   of them! **After doing all of that, use Maven to compile the code.** We hope that you notice that you 
+   care to use `git mv` instead of just `mv` when moving the files so that Git can still keep track
+   of them! Once everything is in place, stage and commit the changes that you've made so far.
+   
+1. **Next, use Maven to compile the code.** We hope that you notice that you 
    did not need to manually compile the files according their dependencies -- Maven did it for you!
    
 1. Run the `cs1302.ce23.StreamPractice` class. Be sure to specify the class path correctly based on the
-   output provided by Maven during its `compile` phase.
-   
-1. If it worked, then congratulations on creating a Maven project for a set of existing source code
-   files!
+   output provided by Maven during its `compile` phase. If it worked, then congratulations on creating 
+   a Maven project for a set of existing source code files!
   
 **CHECKPOINT**
 
