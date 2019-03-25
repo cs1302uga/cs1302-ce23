@@ -13,7 +13,6 @@ import java.util.stream.Stream;
  */
 public class StreamPractice {
 
-    private static int employeeCounter = 1;
     private static final int NUM_EMPLOYEES = 10;
     
     public static void main(String[] args) {
@@ -21,7 +20,7 @@ public class StreamPractice {
 
         //Generate some employees
         for(int i = 0; i < NUM_EMPLOYEES; i++) {
-            employees.add(genEmployee());
+            employees.add(Employee.genEmployee());
         } // for
 
         //Print the information about the employees
@@ -32,36 +31,7 @@ public class StreamPractice {
 
         //Your code here
 
+        
     } // main
-
-    /**
-     * Generates a random employee object. The employee objects
-     * are named "Employee" followed by an increasing numerical value
-     * starting at 1. The first employee will be "Employee1" then
-     * "Employee2" and so on.
-     * The level is set to a random number between 1 and 5 (inclusive).
-     * Gross salary is a random double between 100K and 1M
-     * The number of deductions is between 1 and 5 (inclusive) and each
-     * deduction is between 1K and 5K.
-     * @return the generated {@code Employee} object.
-     */
-    public static Employee genEmployee() {
-
-        String name = "Employee" + employeeCounter;
-        employeeCounter++;
-
-        int level = (int)(Math.random() * 5) + 1;
-
-        double gross = (Math.random() * 500000) + 50000;
-
-        int numDeductions = (int)(Math.random() * 5) + 1;
-        double[] deductions = new double[numDeductions];
-        for (int i = 0; i < numDeductions; i++) {
-            deductions[i] = Math.random() * 5000 + 1000;
-        } // for
-        
-        return new Employee(name, level, deductions, gross);
-        
-    } // genEmployee
 
 } // StreamPractice
