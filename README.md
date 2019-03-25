@@ -1,7 +1,7 @@
 # cs1302-ce23 - Java Stream API
 
 > "Swims upstream because downstream is too mainstream"
-> **-Salmon Thoughts**
+> **-Salmon**
 
 DESCRIPTION HERE
 
