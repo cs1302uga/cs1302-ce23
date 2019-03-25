@@ -57,20 +57,32 @@ by Maven.
    did not need to manually compile the files according their dependencies -- Maven did it for you!
    
 1. Run the `cs1302.ce23.StreamPractice` class. Be sure to specify the class path correctly based on the
-   output provided by Maven during its `compile` phase. If it worked, then congratulations on creating 
-   a Maven project for a set of existing source code files!
+   output provided by Maven during its `compile` phase. If it worked, you will see the output from 10 
+   randomly created `Employee` objects' `toString` method. We will use these objects to practice with 
+   Java streams in the next checkpoint. Congratulations on creating a Maven project for a set of 
+   existing source code files!
   
 **CHECKPOINT**
 
-An employee’s net income is defined as their gross income     
-minus their deductions. For example, an employee with a       
-gross income of 100 and two deductions {0.1, 0.25} has a   
-net income of 100 − 100(0.1 + 0.25) = 65. Write a code snippet                                                                        
-that, given a java.util.List of Employee objects called array,                                                                        
-prints the sum of the net incomes for all high earning level 2                                                           
-employees using the Java Stream API. A high earning employee  
-is one with a net income exceeding 100,000. You may           
-write extra methods, if needed. You may not use loops.  
+Now that our code compiles and runs, let's practice with the Java Stream API. You should not use loops unless
+a step explicitly asks you to use loops.
+
+1. Print all level 3 employees.
+
+1. Print the salaries of all employees that make over 100K.
+
+1. Write a method called `getNetIncome` that returns the net income for an employee.  
+   (TODO: make this a static method in `StreamPractice` or an instance method of `Employee`?)
+   An employee’s net income is defined as their gross income minus their deductions. For example, an employee 
+   with a gross income of 100 and two deductions {0.1, 0.25} has a net income of 100 − 100(0.1 + 0.25) = 65. 
+   
+1. Write code that prints the sum of the net incomes for all high earning level 2 employees using the Java 
+   Stream API. A high earning employee is one with a net income exceeding 100,000. You may write extra methods, 
+   if needed. Again, no loops.
+
+1. Sure, streams can be tricky at first but they are an extremely powerful tool. Now, try to write a solution 
+   to the previous step using loops (no streams). Don't call any methods that use streams in your solution to 
+   this step. Which solution do you prefer?
 
 **CHECKPOINT**  
 
