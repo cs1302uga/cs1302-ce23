@@ -69,12 +69,20 @@ a step explicitly asks you to use loops.
 
 1. Print all level 3 employees --  each on one line.
 
-1. Print the individual gross incomes of all employees that have a gross income greater than 200K -- each on their own line.
+1. Print the individual gross incomes of all employees that have a gross income greater than 
+   200K -- each on their own line, prefixed with a `$` and formatted to display two digits after
+   the decimal. For convenience, you might use the 
+   [`String.format`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#format-java.lang.String-java.lang.Object...-)
+   that works like `printf` but returns a `String`. 
 
 1. Write a static method in the `StreamPractice` class called `getNetIncome` that takes an `Employee` reference
-   as a parameter and returns the net income for an employee.  An employee’s net income is defined as their gross 
+   as a parameter and returns the net income for the specified employee.  An employee’s net income is defined as their gross 
    income minus their deductions. For example, an employee with a gross income of 100 and two deductions 
    {0.1, 0.25} has a net income of 100 − 100(0.1 + 0.25) = 65. 
+   
+1. Print the individual net incomes of all employees -- each on their own line, 
+   prefixed with a `$` and formatted to display two digits after the decimal.
+   You should use the `getNetIncome` method that you wrote in the previous step.
    
 **CHECKPOINT**
 
