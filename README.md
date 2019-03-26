@@ -85,13 +85,19 @@ a step explicitly asks you to use loops.
    
 **CHECKPOINT**
 
-1. **TRICKY** Write code that prints the sum of the net incomes for all high earning level 2 employees using the Java 
+1. **TRICKY:** Write code that prints the sum of the net incomes for all high earning level 2 employees using the Java 
    Stream API. A high earning employee is one with a net income exceeding 100,000. You may write extra methods, 
    if needed. **Again, no loops.**
 
 1. Sure, streams can be tricky at first but they are an extremely powerful tool. Now, try to write a solution 
    to the previous step using loops (no streams). Don't call any methods that use streams in your solution to 
    this step. Which solution do you prefer?
+
+1. **THIS WOULD BE A GOOD TEST QUESTION:** Consider your stream-based solution to the previous questions. If a question 
+   requires both a `map` and a `filter`, answer the following questions related to that code in your notes:
+      * Would it be possible to change the order of the calls to `map` and `filter`? This may require other modifications
+        to work properly.
+      * If you can change the order, explain how this might impact overall processing time for that operation.
 
 **CHECKPOINT**  
 
