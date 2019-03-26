@@ -1,7 +1,7 @@
-# cs1302-ce23
+# cs1302-ce23 - Java Stream API
 
-> TODO QUOTE
-> **-- AUTHOR, _WORK_**
+> "Swims upstream because downstream is too mainstream"
+> **-Salmon**
 
 DESCRIPTION HERE
 
@@ -71,10 +71,10 @@ a step explicitly asks you to use loops.
 
 1. Print the salaries of all employees that make over 100K.
 
-1. Write a method called `getNetIncome` that returns the net income for an employee.  
-   (TODO: make this a static method in `StreamPractice` or an instance method of `Employee`?)
-   An employee’s net income is defined as their gross income minus their deductions. For example, an employee 
-   with a gross income of 100 and two deductions {0.1, 0.25} has a net income of 100 − 100(0.1 + 0.25) = 65. 
+1. Write a static method in the `StreamPractice` class called `getNetIncome` that takes an `Employee` reference
+   as a parameter and returns the net income for an employee.  An employee’s net income is defined as their gross 
+   income minus their deductions. For example, an employee with a gross income of 100 and two deductions 
+   {0.1, 0.25} has a net income of 100 − 100(0.1 + 0.25) = 65. 
    
 **CHECKPOINT**
 
@@ -97,6 +97,4 @@ Copyright &copy; Michael E. Cotterell, Brad Barnes, and the University of Georgi
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a> to students and the public.
 The content and opinions expressed on this Web page do not necessarily reflect the views of nor are they endorsed by the University of Georgia or the University System of Georgia.
 </small>
-
-
 
