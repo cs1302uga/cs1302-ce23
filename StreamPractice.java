@@ -28,9 +28,16 @@ public class StreamPractice {
             System.out.println(e);
         } // for
 
+        System.out.println("YOUR STUFF BELOW\n");
+        
         // Your code here
 
         
     } // main
+
+    public static double getNetIncome(Employee e) {
+        double gross = e.getGross();
+        return gross - Arrays.stream(e.getDeductions()).sum();
+    } // getNetIncome
 
 } // StreamPractice
