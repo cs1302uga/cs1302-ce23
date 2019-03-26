@@ -67,24 +67,37 @@ by Maven.
 Now that our code compiles and runs, let's practice with the Java Stream API. You should not use loops unless
 a step explicitly asks you to use loops.
 
-1. Print all level 3 employees.
+1. Print all level 3 employees --  each on one line.
 
-1. Print the salaries of all employees that make over 100K.
+1. Print the individual gross incomes of all employees that have a gross income greater than 
+   200K -- each on their own line, prefixed with a `$` and formatted to display two digits after
+   the decimal. For convenience, you might use the 
+   [`String.format`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#format-java.lang.String-java.lang.Object...-)
+   that works like `printf` but returns a `String`. 
 
 1. Write a static method in the `StreamPractice` class called `getNetIncome` that takes an `Employee` reference
-   as a parameter and returns the net income for an employee.  An employee’s net income is defined as their gross 
-   income minus their deductions. For example, an employee with a gross income of 100 and two deductions 
-   {0.1, 0.25} has a net income of 100 − 100(0.1 + 0.25) = 65. 
+   as a parameter and returns the net income for the specified employee.  An employee’s net income is defined as
+   their gross income minus the sum of their deductions. 
+   
+1. Print the individual net incomes of all employees -- each on their own line, 
+   prefixed with a `$` and formatted to display two digits after the decimal.
+   You should use the `getNetIncome` method that you wrote in the previous step.
    
 **CHECKPOINT**
 
-1. **TRICKY** Write code that prints the sum of the net incomes for all high earning level 2 employees using the Java 
+1. **TRICKY:** Write code that prints the sum of the net incomes for all high earning level 2 employees using the Java 
    Stream API. A high earning employee is one with a net income exceeding 100,000. You may write extra methods, 
-   if needed. Again, no loops.
+   if needed. **Again, no loops.**
 
 1. Sure, streams can be tricky at first but they are an extremely powerful tool. Now, try to write a solution 
    to the previous step using loops (no streams). Don't call any methods that use streams in your solution to 
    this step. Which solution do you prefer?
+
+1. **THIS WOULD BE A GOOD TEST QUESTION:** Consider your stream-based solution to the previous questions. If a question 
+   requires both a `map` and a `filter`, answer the following questions related to that code in your notes:
+      * Would it be possible to change the order of the calls to `map` and `filter`? This may require other modifications
+        to work properly.
+      * If you can change the order, explain how this might impact overall processing time for that operation.
 
 **CHECKPOINT**  
 
