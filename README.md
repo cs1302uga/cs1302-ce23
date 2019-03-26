@@ -67,9 +67,9 @@ by Maven.
 Now that our code compiles and runs, let's practice with the Java Stream API. You should not use loops unless
 a step explicitly asks you to use loops.
 
-1. Print all level 3 employees.
+1. Print all level 3 employees --  each on one line.
 
-1. Print the salaries of all employees that make over 100K.
+1. Print the gross income of all employees that have a gross income greater than 200K.
 
 1. Write a static method in the `StreamPractice` class called `getNetIncome` that takes an `Employee` reference
    as a parameter and returns the net income for an employee.  An employee’s net income is defined as their gross 
