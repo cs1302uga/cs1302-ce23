@@ -18,18 +18,17 @@ public class StreamPractice {
     public static void main(String[] args) {
         List<Employee> employees = new ArrayList<Employee>();
 
-        //Generate some employees
+        // Generate employees
         for(int i = 0; i < NUM_EMPLOYEES; i++) {
             employees.add(Employee.genEmployee());
         } // for
 
-        //Print the information about the employees
+        // Print information about the employees
         for(Employee e: employees) {
             System.out.println(e);
-            System.out.println("==========");
-        }
+        } // for
 
-        //Your code here
+        // Your code here
 
         
     } // main

@@ -79,22 +79,16 @@ public class Employee {
      * Returns a {@code String} representation of this 
      * {@code Employee} object in the format:
      *
-     * <pre>{@code <Employee Name>
-     * Level: <level>
-     * Gross Pay: $<gross pay>
-     * Deductions: 
-     * 	 $<deduction1>
-     * 	 $<deduction2>
-     *	 ...}</pre>
+     * {@code Employee(property = value, ... )}
      */
     public String toString() {
-        String rc = name + "\n";
-        rc += String.format("Level: %1d \n", level);
-        rc += String.format("Gross Pay: $%.2f \n",  gross);
-        rc += "Deductions: \n";
-        for(double d: deductions) {
-            rc += String.format("\t $%.2f\n", d) ;
-        } // for
+        String[] dstr = Arrays.stream(deductions)
+            .mapToObj(d -> String.format("%.2f", d))
+            .toArray(String[]::new);
+        String rc = "Employee(name = " + name + ", ";
+        rc += String.format("level = %1d, ", level);
+        rc += String.format("gross = %.2f, ",  gross);
+        rc += "deductions = " + Arrays.toString(dstr) + ")";
         return rc;
     } // toString
 
@@ -111,7 +105,7 @@ public class Employee {
      */
     public static Employee genEmployee() {
 
-        String name = "Employee" + employeeCounter;
+        String name = String.format("Employee%02d", employeeCounter);
         employeeCounter++;
 
         int level = (int)(Math.random() * 5) + 1;
