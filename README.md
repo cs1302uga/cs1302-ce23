@@ -3,7 +3,9 @@
 > "Swims upstream because downstream is too mainstream"
 > **-Salmon**
 
-DESCRIPTION HERE
+This first part of this exercise lets students experience creating a Maven project for an existing set of 
+source code files. The remainder of the exercise focusses on using the Java Stream API to solve problems
+more concisely and clearly.
 
 ## References and Prerequisites
 
