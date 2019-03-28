@@ -35,9 +35,4 @@ public class StreamPractice {
         
     } // main
 
-    public static double getNetIncome(Employee e) {
-        double gross = e.getGross();
-        return gross - Arrays.stream(e.getDeductions()).sum();
-    } // getNetIncome
-
 } // StreamPractice
