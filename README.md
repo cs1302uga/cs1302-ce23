@@ -58,8 +58,17 @@ by Maven.
 1. **Next, use Maven to compile the code.** We hope that you notice that you 
    did not need to manually compile the files according their dependencies -- Maven did it for you!
    
-1. Run the `cs1302.ce23.StreamPractice` class. Be sure to specify the class path correctly based on the
-   output provided by Maven during its `compile` phase. If it worked, you will see the output from 10 
+1. Run the `cs1302.ce23.StreamPractice` class. 
+
+   1. Run using `java`. Be sure to specify the class path correctly based on the
+      output provided by Maven during its `compile` phase.
+      
+   1. Run using `mvn` and the `exec:java` phase. See the 
+      [CSCI 1302 Maven Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/maven.md)
+      for an example. When using the `exec:java` phase, Maven automagically adds everything to the
+      class path, including JAR files for dependencies specified in `pom.xml`.
+      
+   If it worked, you will see the output from 10 
    randomly created `Employee` objects' `toString` method. We will use these objects to practice with 
    Java streams in the next checkpoint. Congratulations on creating a Maven project for a set of 
    existing source code files!
