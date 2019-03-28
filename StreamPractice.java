@@ -32,7 +32,6 @@ public class StreamPractice {
         
         // Your code here
 
-        
     } // main
 
 } // StreamPractice
