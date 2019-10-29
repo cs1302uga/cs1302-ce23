@@ -4,10 +4,10 @@ import cs1302.Utility;
 import java.util.Arrays;
 
 /**
- * A class representing an employee at a company. Each employee has an associated 
+ * A class representing an employee at a company. Each employee has an associated
  * name, level, gross pay, and a set of deductions.
  *
- * An employee's level indicates their rank within the company. A higher level is a 
+ * An employee's level indicates their rank within the company. A higher level is a
  * higher rank.
  *
  * An employee's deductions are the values that are subtracted from their paycheck.
@@ -40,7 +40,7 @@ public class Employee {
     } // Employee
 
     /**
-     * Returns the name of this {@code Employee}
+     * Returns the name of this {@code Employee}.
      *
      * @return the name of the employee.
      */
@@ -49,7 +49,7 @@ public class Employee {
     } // getName
 
     /**
-     * Returns the gross pay of this {@code Employee}
+     * Returns the gross pay of this {@code Employee}.
      *
      * @return the gross pay of the employee.
      */
@@ -58,7 +58,7 @@ public class Employee {
     } // getGross
 
     /**
-     * Returns the deductions of this {@code Employee}
+     * Returns the deductions of this {@code Employee}.
      *
      * @return the deductions of the employee.
      */
@@ -67,7 +67,7 @@ public class Employee {
     } // getDeductions
 
     /**
-     * Returns the level of this {@code Employee}
+     * Returns the level of this {@code Employee}.
      *
      * @return the level of the employee.
      */
@@ -76,10 +76,12 @@ public class Employee {
     } // getLevel
 
     /**
-     * Returns a {@code String} representation of this 
+     * Returns a {@code String} representation of this
      * {@code Employee} object in the format:
      *
-     * {@code Employee(property = value, ... )}
+     * {@code Employee(property = value, ... )}.
+     *
+     * @return the {@code String} representation of this object.
      */
     public String toString() {
         String[] dstr = Arrays.stream(deductions)
@@ -117,9 +119,9 @@ public class Employee {
         for (int i = 0; i < numDeductions; i++) {
             deductions[i] = Math.random() * 5000 + 1000;
         } // for
-        
+
         return new Employee(name, level, deductions, gross);
-        
+
     } // genEmployee
 
 } // Employee

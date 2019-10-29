@@ -14,22 +14,22 @@ import java.util.stream.Stream;
 public class StreamPractice {
 
     private static final int NUM_EMPLOYEES = 10;
-    
+
     public static void main(String[] args) {
         List<Employee> employees = new ArrayList<Employee>();
 
         // Generate employees
-        for(int i = 0; i < NUM_EMPLOYEES; i++) {
+        for (int i = 0; i < NUM_EMPLOYEES; i++) {
             employees.add(Employee.genEmployee());
         } // for
 
         // Print information about the employees
-        for(Employee e: employees) {
+        for (Employee e: employees) {
             System.out.println(e);
         } // for
 
         System.out.println("YOUR STUFF BELOW\n");
-        
+
         // Your code here
 
     } // main
