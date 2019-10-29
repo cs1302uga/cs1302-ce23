@@ -50,9 +50,9 @@ by Maven.
    it to the repository.
    
 1. Delete the Maven-generated driver (i.e., `src/main/java/cs1302/ce23/App.java`) and the unit test files 
-   (i.e., everything under `src/test/java`), then move the `.java` files provided with the exercise into
-   their proper locations under `src/main/java` according to their package statements. Take special
-   care to use `git mv` instead of just `mv` when moving the files so that Git can still keep track
+   (i.e., you can remove the entire `src/test` subdirectory), then move the `.java` files provided with the 
+   exercise into their proper locations under `src/main/java` according to their package statements. Take 
+   special care to use `git mv` instead of just `mv` when moving the files so that Git can still keep track
    of them! 
    * Once everything is in place, stage and commit the changes that you've made so far.
    
@@ -94,11 +94,12 @@ a step explicitly asks you to use loops**.
 
 1. Write a static method in the `StreamPractice` class called `getNetIncome` that takes an `Employee` reference
    as a parameter and returns the net income for the specified employee.  An employee’s net income is defined as
-   their gross income minus the sum of their deductions. 
+   their gross income minus the sum of their deductions. **Note:** In this version of the `Employee` class, the 
+   deductions are dollar amounts, not percentages.
    
 1. Print the individual net incomes of all employees -- each on their own line, 
    prefixed with a `$` and formatted to display two digits after the decimal.
-   You should use the `getNetIncome` method that you wrote in the previous step.
+   You should use the `getNetIncome` method that you wrote in the previous step. 
    
 **CHECKPOINT**
 
