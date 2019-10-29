@@ -1,5 +1,7 @@
 # cs1302-ce23 - Java Stream API
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 > "Swims upstream because downstream is too mainstream"
 > **-Salmon**
 
