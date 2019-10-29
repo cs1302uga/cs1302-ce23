@@ -7,6 +7,12 @@ This first part of this exercise lets students experience creating a Maven proje
 source code files. The remainder of the exercise focusses on using the Java Stream API to solve problems
 more concisely and clearly.
 
+## Course-Specific Learning Outcomes
+* **LO5.b:** (Partial) Utilize a build tool such as Maven or Ant to create and manage a
+complex software solution involving external dependencies.
+* **LO7.b:** Use stream-like operations (e.g., map, reduce, and filter in the Java Stream API) as an 
+alternative to iteration in solving problems. Observe the difference between resulting implementations.
+
 ## References and Prerequisites
 
 * [Baeldung: Introduction to Java 8 Streams](https://www.baeldung.com/java-8-streams-introduction)
