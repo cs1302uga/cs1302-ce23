@@ -53,12 +53,14 @@ by Maven.
    (i.e., everything under `src/test/java`), then move the `.java` files provided with the exercise into
    their proper locations under `src/main/java` according to their package statements. Take special
    care to use `git mv` instead of just `mv` when moving the files so that Git can still keep track
-   of them! Once everything is in place, stage and commit the changes that you've made so far.
+   of them! 
+   * Once everything is in place, stage and commit the changes that you've made so far.
    
 1. **Next, use Maven to compile the code.** We hope that you notice that you 
    did not need to manually compile the files according their dependencies -- Maven did it for you!
    
-1. Run the `cs1302.ce23.StreamPractice` class. 
+1. Run the `cs1302.ce23.StreamPractice` class in the two ways explained below. Make sure to write the 
+   full execution command in your notes. 
 
    1. Run using `java`. Be sure to specify the class path correctly based on the
       output provided by Maven during its `compile` phase.
@@ -75,10 +77,14 @@ by Maven.
   
 **CHECKPOINT**
 
-Now that our code compiles and runs, let's practice with the Java Stream API. You should not use loops unless
-a step explicitly asks you to use loops.
+Now that our code compiles and runs, let's practice with the Java Stream API. **You should not use loops unless
+a step explicitly asks you to use loops**.
 
-1. Print all level 3 employees --  each on one line.
+1. Print all level 3 employees --  each on one line. You can use the predefined `toString()` method to print an
+   `Employee` object. 
+      * Compile and run your code to verify that it is working. Since the `Employee` objects are randomly generated, 
+      you should run the program multiple times and check the output.
+      * Stage and commit your changes.
 
 1. Print the individual gross incomes of all employees that have a gross income greater than 
    200K -- each on their own line, prefixed with a `$` and formatted to display two digits after
