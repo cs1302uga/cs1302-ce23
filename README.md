@@ -2,8 +2,8 @@
 
 ![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
 
-> "Swims upstream because downstream is too mainstream"
-> **-Salmon**
+> "I swim upstream because downstream is too mainstream"
+> **--Salmon**
 
 This first part of this exercise lets students experience creating a Maven project for an existing set of 
 source code files. The remainder of the exercise focusses on using the Java Stream API to solve problems
