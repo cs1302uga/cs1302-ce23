@@ -53,19 +53,21 @@ instead. Here, the term "project" informally refers to a collection of Java file
 by Maven.
 
 1. Using Maven, create a project subdirectory for this exercise called `cs1302-ce23-mvn` with a primary 
-   package called `cs1302.ce23`. In your notes, write down the full command that you used to accomplish 
-   this.
+   package called `cs1302.ce23`. Once this command completes successfully, you will have a `cs1302-ce23-mvn`
+   subdirectory contained within your original `cs1302-ce23` directory. In your notes, write down the full 
+   command that you used to accomplish this.
 
 1. Change into the `cs1302-ce23-mvn` directory that you just created using Maven, then update the POM
    so that the project works with Java 8. After that, use Git to track the `pom.xml`, then commit
    it to the repository.
    
 1. Delete the Maven-generated driver (i.e., `src/main/java/cs1302/ce23/App.java`) and the unit test files 
-   (i.e., you can remove the entire `src/test` subdirectory), then move the `.java` files provided with the 
-   exercise into their proper locations under `src/main/java` according to their package statements. Take 
-   special care to use `git mv` instead of just `mv` when moving the files so that Git can still keep track
-   of them! 
-   * Once everything is in place, stage and commit the changes that you've made so far.
+   (i.e., you can remove the entire `src/test` subdirectory), then move (using `git mv`) the `.java` files 
+   provided with the exercise into their proper locations under `src/main/java` according to their package 
+   statements. Take special care to use `git mv` instead of just `mv` when moving the files so that Git 
+   can still keep track of them! 
+   * Once everything is in place, stage and commit the changes that you've made so far. At this point, executing
+     `git status` should say "nothing to commit (working directory clean)".
    
 1. **Next, use Maven to compile the code.** We hope that you notice that you 
    did not need to manually compile the files according their dependencies -- Maven did it for you!
@@ -95,32 +97,49 @@ a step explicitly asks you to use loops**.
    `Employee` object. 
       * Compile and run your code to verify that it is working. Since the `Employee` objects are randomly generated, 
       you should run the program multiple times and check the output.
-      * Stage and commit your changes.
-
+      * For readability, be sure to include descriptive output before the level 3 employees are printed. For example,
+      your code might print `CHECKPOINT 2.1: LEVEL 3 EMPLOYEES` followed by all of the level 3 employees.
+      * Make sure your code passes `checkstyle` then stage and commit your changes.
+      
 1. Print the individual gross incomes of all employees that have a gross income greater than 
    200K -- each on their own line, prefixed with a `$` and formatted to display two digits after
    the decimal. For convenience, you might use the 
    [`String.format`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#format-java.lang.String-java.lang.Object...-)
    that works like `printf` but returns a `String`. 
-
+      * Compile and run your code to verify that it is working. Since the `Employee` objects are randomly generated, 
+      you should run the program multiple times and check the output.
+      * For readability, be sure to include descriptive output before the gross incomes are printed. 
+      For example, your code might print `CHECKPOINT 2.2: INCOME > 200K` followed by all of gross incomes.
+      * Make sure your code passes `checkstyle` then stage and commit your changes.
+      
 1. Write a static method in the `StreamPractice` class called `getNetIncome` that takes an `Employee` reference
-   as a parameter and returns the net income for the specified employee.  An employee’s net income is defined as
-   their gross income minus the sum of their deductions. **Note:** In this version of the `Employee` class, the 
-   deductions are dollar amounts, not percentages.
+   as a parameter and returns the net income for the specified employee (Remember, no loops). 
+   An employee’s net income is defined as their gross income minus the sum of their deductions. 
+   **Note:** In this version of the `Employee` class, the deductions are dollar amounts, not percentages.
    
 1. Print the individual net incomes of all employees -- each on their own line, 
    prefixed with a `$` and formatted to display two digits after the decimal.
    You should use the `getNetIncome` method that you wrote in the previous step. 
+      * Compile and run your code to verify that it is working. Since the `Employee` objects are randomly generated, 
+      you should run the program multiple times and check the output.
+      * For readability, be sure to include descriptive output before the net incomes are printed. 
+      For example, your code might print `CHECKPOINT 2.3: NET INCOME` followed by all of net incomes.
+      * Make sure your code passes `checkstyle` then stage and commit your changes.
    
 ![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
 
 1. **TRICKY:** Write code that prints the sum of the net incomes for all high earning level 2 employees using the Java 
    Stream API. A high earning employee is one with a net income exceeding 100,000. You may write extra methods, 
    if needed. **Again, no loops.**
+      * Compile and run your code to verify that it is working. Since the `Employee` objects are randomly generated, 
+      you should run the program multiple times and check the output.
+      * For readability, be sure to include descriptive output before the final value is printed. 
+      For example, your code might print `CHECKPOINT 3.1:` followed by the final value.
+      * Make sure your code passes `checkstyle` then stage and commit your changes.
 
 1. Sure, streams can be tricky at first but they are an extremely powerful tool. Now, try to write a solution 
    to the previous step using loops (no streams). Don't call any methods that use streams in your solution to 
-   this step. Which solution do you prefer?
+   this step. Which solution is cleaner and easier to read?
 
 1. **THIS WOULD BE A GOOD TEST QUESTION:** Consider your stream-based solution to the previous questions. If a question 
    requires both a `map` and a `filter`, answer the following questions related to that code in your notes:
