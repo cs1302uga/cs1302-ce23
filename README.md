@@ -86,7 +86,7 @@ by Maven.
    Java streams in the next checkpoint. Congratulations on creating a Maven project for a set of 
    existing source code files!
   
-**CHECKPOINT**
+![CP](https://img.shields.io/badge/Checkpoint-1-success?style=for-the-badge)
 
 Now that our code compiles and runs, let's practice with the Java Stream API. **You should not use loops unless
 a step explicitly asks you to use loops**.
@@ -112,7 +112,7 @@ a step explicitly asks you to use loops**.
    prefixed with a `$` and formatted to display two digits after the decimal.
    You should use the `getNetIncome` method that you wrote in the previous step. 
    
-**CHECKPOINT**
+![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
 
 1. **TRICKY:** Write code that prints the sum of the net incomes for all high earning level 2 employees using the Java 
    Stream API. A high earning employee is one with a net income exceeding 100,000. You may write extra methods, 
@@ -128,7 +128,7 @@ a step explicitly asks you to use loops**.
         to work properly.
       * If you can change the order, explain how this might impact overall processing time for that operation.
 
-![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
+![CP](https://img.shields.io/badge/Checkpoint-3-success?style=for-the-badge)
 
 **Each student needs to individually submit their own work.**
 
@@ -153,7 +153,7 @@ a step explicitly asks you to use loops**.
 1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
    
    ```
-   $ submit cs1302-ce22 cs1302a
+   $ submit cs1302-ce23 cs1302a
    ```
    
 ![CP](https://img.shields.io/badge/Checkpoint-Submission-success?style=for-the-badge)
