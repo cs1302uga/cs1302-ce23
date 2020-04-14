@@ -95,6 +95,7 @@ a step explicitly asks you to use loops**.
   you can create a stream from either as follows:
   * `Arrays.stream(array)`
   * `list.stream()`
+  The actual variable names in the exercise may differ from the illustrative example above.
 
 1. Print all level 3 employees --  each on one line. You can use the predefined `toString()` method to print an
    `Employee` object. 
