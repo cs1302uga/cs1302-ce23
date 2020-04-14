@@ -91,7 +91,7 @@ by Maven.
 Now that our code compiles and runs, let's practice with the Java Stream API. **You should not use loops unless
 a step explicitly asks you to use loops**.
 
-* **Quick Note:** Suppose `array` is of type `Employee[]` and `list` is of type `List<Employee>`,
+* **Quick Aside:** Suppose `array` is of type `Employee[]` and `list` is of type `List<Employee>`,
   you can create a stream from either as follows:
   * `Arrays.stream(array)`
   * `list.stream()`
