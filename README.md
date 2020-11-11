@@ -57,7 +57,7 @@ by Maven.
    command that you used to accomplish this.
 
 1. Change into the `cs1302-ce23-mvn` directory that you just created using Maven, then update the POM
-   so that the project works with Java 8. After that, use Git to track the `pom.xml`, then commit
+   so that the project works with Java 11. After that, use Git to track the `pom.xml`, then commit
    it to the repository.
    
 1. Delete the Maven-generated driver (i.e., `src/main/java/cs1302/ce23/App.java`) and the unit test files 
