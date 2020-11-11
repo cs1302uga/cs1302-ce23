@@ -1,7 +1,6 @@
 # cs1302-ce23 - Java Stream API
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
-![Instruction: Online](https://img.shields.io/badge/Instruction-Online-important)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 > "I swim upstream because downstream is too mainstream"
 > **--Salmon**
@@ -24,7 +23,7 @@ alternative to iteration in solving problems. Observe the difference between res
 ## Questions
 
 In your notes, clearly answer the following questions. These instructions assume that you are 
-logged into the Nike server. 
+logged into the Odin server. 
 
 **NOTE:** If a step requires you to enter in a command, please provide in your notes the full 
 command that you typed to make the related action happen. If context is necessary (e.g., the 
@@ -32,7 +31,7 @@ command depends on your present working directory), then please note that contex
 
 ### Getting Started
 
-1. Use Git to clone the repository for this exercise onto Nike into a subdirectory called `cs1302-ce23`:
+1. Use Git to clone the repository for this exercise onto Odin into a subdirectory called `cs1302-ce23`:
 
    ```
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce23.git
@@ -42,7 +41,9 @@ command depends on your present working directory), then please note that contex
    files distributed with the exercise, but they are not organized! That's intentional. 
    Continue on to the [Exercise Steps](#exercise-steps) below.
    
-### Exercise Steps
+## Exercise Steps
+
+### Checkpoint 1 Steps
 
 The starter code isn't organized properly! Instead of manually creating a default package
 for the compiled code, let's 
@@ -86,7 +87,13 @@ by Maven.
    Java streams in the next checkpoint. Congratulations on creating a Maven project for a set of 
    existing source code files!
   
-![CP](https://img.shields.io/badge/Checkpoint-1-success?style=for-the-badge)
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 2 Steps
 
 Now that our code compiles and runs, let's practice with the Java Stream API. **You should not use loops unless
 a step explicitly asks you to use loops**.
@@ -108,7 +115,7 @@ a step explicitly asks you to use loops**.
 1. Print the individual gross incomes of all employees that have a gross income greater than 
    200K -- each on their own line, prefixed with a `$` and formatted to display two digits after
    the decimal. For convenience, you might use the 
-   [`String.format`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#format-java.lang.String-java.lang.Object...-)
+   [`String.format`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...))
    that works like `printf` but returns a `String`. 
       * Compile and run your code to verify that it is working. Since the `Employee` objects are randomly generated, 
       you should run the program multiple times and check the output.
@@ -130,7 +137,13 @@ a step explicitly asks you to use loops**.
       For example, your code might print `CHECKPOINT 2.3: NET INCOME` followed by all of net incomes.
       * Make sure your code passes `checkstyle` then stage and commit your changes.
    
-![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 3 Steps
 
 1. **TRICKY:** Write code that prints the sum of the net incomes for all high earning level 2 employees using the Java 
    Stream API. A high earning employee is one with a net income exceeding 100,000. You may write extra methods, 
@@ -151,35 +164,51 @@ a step explicitly asks you to use loops**.
         to work properly.
       * If you can change the order, explain how this might impact overall processing time for that operation.
 
-![CP](https://img.shields.io/badge/Checkpoint-3-success?style=for-the-badge)
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
+
+<hr/>
+
+### Submission Steps
 
 **Each student needs to individually submit their own work.**
 
-1. Create a plain text file called `SUBMISSION.md` directly inside this exercise
-   directory with the following information:
+1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-ce23`
+   directory with the following information.
 
    1. Your name and UGA ID number;
    1. Collaborator names, if any; and
-   1. The weekly code (listed with the exercise on eLC).
+   1. If you created the API website, include the full link to the site you generated.
    
-   Here is an example:
+   Here is an example of the contents of `SUBMISSION.md`.
    
    ```
    1. Sally Smith (811-000-999)
    2. Collaborators: Joe Allen, Stacie Mack
-   3. Weekly Code: replace-with-actual-code
+   3. https://webwork.cs.uga.edu/~user/cs1302-ce23-doc
    ```
 
-1. Add and commit `SUBMISSION.md`. Also, do a final check to ensure your code 
-   passes the `checkstyle` audit, then stage and commit all changes, if needed.
+1. Change directories to the parent of `cs1302-ce23` (e.g., `cd ..` from `cs1302-ce23`). If you would like
+   to make a backup tar file, the instructions are in the submissions steps for [ce02](https://github.com/cs1302uga/cs1302-ce02).
+   We won't repeat those steps here and you can view them as optional.
+   
+1. Use the `submit` command to submit this exercise to `csci-1302`:
+   
+   ```
+   $ submit cs1302-ce23 csci-1302
+   ```
+   
+   Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
+   in that output. Additionally, if successful, the submit command creates a new receipt file in the directory you 
+   submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
+   Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
 
-1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
-   
-   ```
-   $ submit cs1302-ce23 cs1302a
-   ```
-   
-![CP](https://img.shields.io/badge/Checkpoint-Submission-success?style=for-the-badge)
+   **Note:** You must be on Odin to submit.
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
 
 <hr/>
 
