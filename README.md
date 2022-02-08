@@ -115,7 +115,7 @@ a step explicitly asks you to use loops**.
 1. Print the individual gross incomes of all employees that have a gross income greater than 
    200K -- each on their own line, prefixed with a `$` and formatted to display two digits after
    the decimal. For convenience, you might use the 
-   [`String.format`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...))
+   [`String.format`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...))
    that works like `printf` but returns a `String`. 
       * Compile and run your code to verify that it is working. Since the `Employee` objects are randomly generated, 
       you should run the program multiple times and check the output.
